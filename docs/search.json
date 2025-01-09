@@ -16,8 +16,8 @@
   {
     "objectID": "cv_peng.html",
     "href": "cv_peng.html",
-    "title": "BnuEds",
+    "title": "MyCV",
     "section": "",
-    "text": "---\ntitle: \"CV_Peng\"\njupyter: python3\n---\n\nprint(\"My CV\")\n\n[1] \"My CV\""
+    "text": "print(\"My CV\")\n\n[1] \"My CV\""
   }
 ]
