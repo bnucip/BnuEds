@@ -1,9 +1,6 @@
-``` python
 ---
-title: "CV_Peng"
-jupyter: python3
+title: "MyCV"
 ---
-```
 
 ```{r}
 print("My CV")
