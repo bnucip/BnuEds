@@ -238,7 +238,10 @@
           </else>
         </choose>
       </group>
-      <text variable="DOI" prefix="doi:"/>
+      <group delimiter="">
+        <text value=". "/>
+        <text variable="DOI" prefix="https://doi.org/" text-case="lowercase" font-style="normal" link="true"/>
+      </group>
     </layout>
   </bibliography>
 </style>
