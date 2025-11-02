@@ -240,7 +240,7 @@
       </group>
       <group delimiter="">
         <text value=". "/>
-        <text variable="DOI" prefix="https://doi.org/" text-case="lowercase" font-style="normal" link="true"/>
+        <text variable="DOI" prefix="https://doi.org/" text-case="lowercase" font-style="normal"/>
       </group>
     </layout>
   </bibliography>
