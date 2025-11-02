@@ -2,13 +2,13 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title>Science-with-DOI-link</title>
+    <title>Science-with-DOI-Link</title>
     <id>http://www.zotero.org/styles/science-with-doi-link</id>
-    <link href="http://www.zotero.org/styles/science-with-doi" rel="self"/>
+    <link href="http://www.zotero.org/styles/science-with-doi-link" rel="self"/>
     <link href="http://www.sciencemag.org/about/authors/prep/res/refs.dtl" rel="documentation"/>
     <author>
-      <name>Julian Onions</name>
-      <email>julian.onions@gmail.com</email>
+      <name>Athing</name>
+      <email>athing@tju.edu.cn</email>
     </author>
     <contributor>
       <name>Sebastian Karcher</name>
@@ -21,7 +21,7 @@
     <issn>0036-8075</issn>
     <eissn>1095-9203</eissn>
     <summary>The Science journal style.</summary>
-    <updated>2025-11-01T15:32:15+00:00</updated>
+    <updated>2025-11-02T01:47:43+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="editor">
@@ -238,8 +238,8 @@
           </else>
         </choose>
       </group>
-      <group delimiter="###">
-        <text value="@@@. "/>
+      <group delimiter="">
+        <text value=". "/>
         <text variable="DOI" prefix="https://doi.org/" text-case="lowercase" font-style="normal" link="true"/>
       </group>
     </layout>
