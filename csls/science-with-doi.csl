@@ -238,8 +238,8 @@
           </else>
         </choose>
       </group>
-      <group delimiter="">
-        <text value=". "/>
+      <group delimiter="###">
+        <text value="@@. "/>
         <text variable="DOI" prefix="https://doi.org/" text-case="lowercase" font-style="normal" link="true"/>
       </group>
     </layout>
