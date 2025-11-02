@@ -2,7 +2,7 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
-    <title>Science-with-DOI</title>
+    <title>Science-with-DOI-link</title>
     <id>http://www.zotero.org/styles/science-with-doi</id>
     <link href="http://www.zotero.org/styles/science-with-doi" rel="self"/>
     <link href="http://www.sciencemag.org/about/authors/prep/res/refs.dtl" rel="documentation"/>
@@ -239,7 +239,7 @@
         </choose>
       </group>
       <group delimiter="###">
-        <text value="@@. "/>
+        <text value="@@@. "/>
         <text variable="DOI" prefix="https://doi.org/" text-case="lowercase" font-style="normal" link="true"/>
       </group>
     </layout>
