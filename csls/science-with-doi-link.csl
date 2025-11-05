@@ -57,8 +57,10 @@
     <choose>
       <if variable="DOI">
           <group delimiter="">
-            <text value=". "/>
-            <text variable="DOI" prefix="https://doi.org/" text-case="lowercase" font-style="normal"/>
+            <text value=". doi:"/>
+            <text variable="DOI"
+                  text-case="lowercase"
+                  href="https://doi.org/{DOI}"/>
           </group>
       </if>
       <else>
