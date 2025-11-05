@@ -53,7 +53,10 @@
   <macro name="access-value">
     <choose>
       <if variable="DOI">
-        <text variable="DOI" prefix=", doi:"/>
+          <group delimiter="">
+            <text value=". "/>
+            <text variable="DOI" prefix="https://doi.org/" text-case="lowercase" font-style="normal"/>
+          </group>
       </if>
       <else>
         <group prefix=" (" suffix=")">
@@ -237,10 +240,6 @@
             <text macro="access"/>
           </else>
         </choose>
-      </group>
-      <group delimiter="">
-        <text value=". "/>
-        <text variable="DOI" prefix="https://doi.org/" text-case="lowercase" font-style="normal"/>
       </group>
     </layout>
   </bibliography>
