@@ -48,6 +48,9 @@
       <else-if is-numeric="page" match="none">
         <text macro="access-value"/>
       </else-if>
+      <else>
+        <text macro="access-value"/>
+      </else>
     </choose>
   </macro>
   <macro name="access-value">
