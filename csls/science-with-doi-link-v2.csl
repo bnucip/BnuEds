@@ -60,13 +60,13 @@
         <text value=". doi:"/>
         <text variable="DOI"
               text-case="lowercase"
-              href="https://doi.org/%7BDOI%7D"/>
+              prefix="https://doi.org/"/>
       </group>
     </if>
     <else>
       <group prefix=" (" suffix=")">
         <text value="available at "/>
-        <text variable="URL" href="%7BURL%7D"/>
+        <text variable="URL"/>
       </group>
     </else>
   </choose>
