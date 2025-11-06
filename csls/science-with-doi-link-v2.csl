@@ -53,24 +53,24 @@
       </else>
     </choose>
   </macro>
-  <macro name="access-value">
-    <choose>
-      <if variable="DOI">
-          <group delimiter="">
-            <text value=". doi:"/>
-            <text variable="DOI"
-                  text-case="lowercase"
-                  href="https://doi.org/{DOI}"/>
-          </group>
-      </if>
-      <else>
-        <group prefix=" (" suffix=")">
-          <text value="available at "/>
-          <text variable="URL"/>
-        </group>
-      </else>
-    </choose>
-  </macro>
+<macro name="access-value">
+  <choose>
+    <if variable="DOI">
+      <group delimiter="">
+        <text value=". doi:"/>
+        <text variable="DOI"
+              text-case="lowercase"
+              href="https://doi.org/%7BDOI%7D"/>
+      </group>
+    </if>
+    <else>
+      <group prefix=" (" suffix=")">
+        <text value="available at "/>
+        <text variable="URL" href="%7BURL%7D"/>
+      </group>
+    </else>
+  </choose>
+</macro>
   <macro name="title">
     <choose>
       <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
