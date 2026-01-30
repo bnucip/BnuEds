@@ -4,8 +4,6 @@
   <info>
     <title>Science-with-DOI-Link-v10</title>
     <id>http://www.zotero.org/styles/science-with-doi-link-v10</id>
-    <link href="http://www.zotero.org/styles/science-with-doi" rel="self"/>
-    <link href="http://www.sciencemag.org/about/authors/prep/res/refs.dtl" rel="documentation"/>
     <author>
       <name>Athing</name>
       <email>athing@tju.edu.cn</email>
@@ -86,7 +84,9 @@
       <group delimiter=". ">
         <text macro="title"/>
         <choose>
-          <text variable="container-title" form="long" match="Science" match-case="ignore-case" font-style="italic"/>
+          <if variable="container-title" match="Science">
+            <text variable="container-title" form="long" font-style="italic"/>
+          </if>
           <else>
             <text variable="container-title" form="short" font-style="italic"/>
           </else>
