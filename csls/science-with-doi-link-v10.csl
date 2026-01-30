@@ -86,11 +86,11 @@
       <group delimiter=". ">
         <text macro="title"/>
         <choose>
-          <match variable="container-title" match="Science" match-case="ignore-case">
-            <text variable="container-title" form="long" font-style="italic"/>
-          </match>
-          <else>
+          <if variable="container-title" match="Science" match-case="ignore-case">
             <text variable="container-title" form="short" font-style="italic"/>
+          </if>
+          <else>
+            <text variable="container-title" form="long" font-style="italic"/>
           </else>
         </choose>
         <text variable="volume" font-weight="bold"/>
