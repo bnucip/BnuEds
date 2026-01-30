@@ -84,7 +84,8 @@
   <macro name="article-details">
     <group delimiter=", ">
       <group delimiter=". ">
-        <text variable="title" font-style="italic"/>
+        <text macro="title"/>
+        <text form="long" variable="container-title" font-style="italic"/>
         <text variable="volume" font-weight="bold"/>
       </group>
       <text variable="page"/>
