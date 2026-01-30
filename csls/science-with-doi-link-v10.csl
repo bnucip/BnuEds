@@ -86,11 +86,9 @@
       <group delimiter=". ">
         <text macro="title"/>
         <choose>
-          <if variable="container-title" match="Science" match-case="ignore-case">
-            <text variable="container-title" form="short" font-style="italic"/>
-          </if>
+          <text variable="container-title" form="long" match="Science" match-case="ignore-case" font-style="italic"/>
           <else>
-            <text variable="container-title" form="long" font-style="italic"/>
+            <text variable="container-title" form="short" font-style="italic"/>
           </else>
         </choose>
         <text variable="volume" font-weight="bold"/>
